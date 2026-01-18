@@ -1,59 +1,40 @@
-# WaterTracker
+# 💧 Water Tracker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+Une application web moderne et légère pour suivre son hydratation quotidienne.  
+Ce projet a été réalisé dans le cadre d'un apprentissage approfondi des concepts modernes d'Angular (v17+).
 
-## Development server
+🔗 **Démo en ligne :** [Voir l'application](https://TON_PSEUDO.github.io/Water-Tracker/)
 
-To start a local development server, run:
+## 📝 Description
 
-```bash
-ng serve
-```
+Water Tracker est une application "Single Page" (SPA) permettant de comptabiliser le nombre de verres d'eau bus dans la journée. L'objectif était de concevoir une architecture propre, modulaire et réactive sans utiliser de bibliothèques tierces pour la gestion d'état.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+L'application sauvegarde automatiquement la progression de l'utilisateur dans le navigateur, permettant de conserver les données même après fermeture de l'onglet.
 
-## Code scaffolding
+## ✨ Fonctionnalités
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Ajout rapide** : Incrémentation du compteur en un clic.
+* **Réinitialisation** : Remise à zéro manuelle du compteur.
+* **Persistance des données** : Sauvegarde automatique via `LocalStorage`.
+* **Design Responsive** : Interface adaptée aux mobiles et desktops (CSS pur).
+* **Architecture Réactive** : Utilisation des **Signals** pour la gestion d'état.
 
-```bash
-ng generate component component-name
-```
+## 🛠️ Stack Technique
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* **Framework** : Angular (Standalone Components)
+* **Gestion d'état** : Angular Signals & Services
+* **Style** : CSS3 (Variables CSS, Flexbox)
+* **Langage** : TypeScript
+* **Déploiement** : GitHub Pages (CI/CD via Angular CLI)
 
-```bash
-ng generate --help
-```
+## 📂 Architecture du Projet
 
-## Building
+Le projet suit une architecture stricte séparant la logique métier de l'interface utilisateur :
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+src/app
+├── core/           # Le "Cerveau" de l'application
+│   └── water-tracker.service.ts  # Gestion d'état (Signals) et LocalStorage
+└── ui/             # Les composants visuels (Dumb components)
+    ├── water-controls/           # Boutons d'action (Boire / Reset)
+    └── water-progress/           # Affichage du compteur
