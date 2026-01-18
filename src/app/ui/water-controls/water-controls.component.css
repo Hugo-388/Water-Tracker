@@ -1,8 +1,6 @@
-/* src/app/ui/water-controls/water-controls.component.css */
-
 div {
   display: flex;
-  flex-direction: column; /* Les boutons l'un sous l'autre sur mobile */
+  flex-direction: column;
   gap: 15px;
 }
 
@@ -19,7 +17,6 @@ button {
   gap: 10px;
 }
 
-/* Le bouton principal (Boire) */
 button:first-child {
   background-color: var(--primary-color);
   color: white;
@@ -28,15 +25,14 @@ button:first-child {
 
 button:first-child:hover {
   background-color: var(--primary-dark);
-  transform: translateY(-2px); /* Le bouton remonte un peu */
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 168, 255, 0.6);
 }
 
 button:first-child:active {
-  transform: translateY(1px); /* Effet d'enfoncement */
+  transform: translateY(1px);
 }
 
-/* Le bouton Reset (plus discret) */
 button:last-child {
   background-color: transparent;
   color: #a4b0be;
@@ -45,6 +41,6 @@ button:last-child {
 
 button:last-child:hover {
   border-color: #ff6b6b;
-  color: #ff6b6b; /* Devient rouge quand on passe dessus */
+  color: #ff6b6b;
   background-color: #fff0f0;
 }

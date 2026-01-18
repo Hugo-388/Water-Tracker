@@ -1,13 +1,10 @@
-/* src/styles.css */
-
 :root {
-  /* Notre palette de couleurs */
-  --primary-color: #00a8ff;    /* Bleu eau vive */
-  --primary-dark: #0097e6;     /* Bleu un peu plus foncé */
-  --accent-color: #4cd137;     /* Vert pour le succès */
-  --text-color: #2f3640;       /* Gris très foncé (mieux que noir) */
-  --bg-color: #f0f8ff;         /* AliceBlue (très léger bleu en fond) */
-  --card-bg: #ffffff;          /* Blanc pur */
+  --primary-color: #00a8ff; /* Bleu eau vive */
+  --primary-dark: #0097e6; /* Bleu un peu plus foncé */
+  --accent-color: #4cd137; /* Vert pour le succès */
+  --text-color: #2f3640; /* Gris très foncé (mieux que noir) */
+  --bg-color: #f0f8ff; /* AliceBlue (très léger bleu en fond) */
+  --card-bg: #ffffff; /* Blanc pur */
   --shadow: 0 10px 30px rgba(0, 168, 255, 0.2); /* Ombre bleutée */
 }
 
@@ -16,15 +13,13 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  
-  /* Centrer l'application au milieu de l'écran */
+
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-/* Un petit reset pour tous les boutons */
 button {
   font-family: inherit;
   cursor: pointer;

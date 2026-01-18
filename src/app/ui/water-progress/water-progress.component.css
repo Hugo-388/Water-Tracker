@@ -1,5 +1,3 @@
-/* src/app/ui/water-progress/water-progress.component.css */
-
 .card {
   display: flex;
   flex-direction: column;
@@ -15,15 +13,12 @@ h3 {
 }
 
 .gros-chiffre {
-  font-size: 6rem; /* Très gros */
+  font-size: 6rem;
   font-weight: 800;
   margin: 10px 0;
   color: var(--primary-color);
-  
-  /* Un petit dégradé sur le texte (effet moderne) */
+
   background: -webkit-linear-gradient(45deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-  /* Pour éviter que le dégradé casse si le navigateur est vieux, on garde une couleur de repli via 'color' au dessus */
 }
