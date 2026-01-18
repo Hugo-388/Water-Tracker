@@ -3,7 +3,7 @@
 Une application web moderne et légère pour suivre son hydratation quotidienne.  
 Ce projet a été réalisé dans le cadre d'un apprentissage approfondi des concepts modernes d'Angular (v17+).
 
-🔗 **Démo en ligne :** [Voir l'application](https://TON_PSEUDO.github.io/Water-Tracker/)
+🔗 **Démo en ligne :** [Voir l'application](https://hugo-388.github.io/Water-Tracker/)
 
 ## 📝 Description
 
